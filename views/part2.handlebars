@@ -1,0 +1,19 @@
+{{!-- Poner aquí el manejo de los posts con Handlebars. --}}
+
+<div class="posts">
+    <div class="row justify-content-center">
+        {{!-- <h1> Created by Adrián </h1> --}}
+        {{#each posts}}
+        <div class="col-lg-7" style="margin-top: 50px;">
+            <div class="card">
+               <!-- Image should appear here -->
+                <div class="card-body">
+                    <h5 class="card-title">
+               Posted by  {{author}} <!-- Author should appear here --> 
+              </h5> 
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
